@@ -1,13 +1,25 @@
----
-title: Análisis de tweets durante las elecciones generales 2023 en Argentina
----
+project:
+  type: website
+  output-dir: docs
 
-## Metodología
+format:
+  html:
+    toc: true
+    linkcolor: purple
+    theme: zephyr
 
-Para llevar acabo este análisis de datos, Data Crítica analizó los datos recolectados por Chequeado. El periodo de los tweets recolectados abarca desde 30-09-2023 hasta 20-11-2023.
-Los textos de los tweets fueron clasificados programáticamente utilizando un modelo de machine learning con la librería de Python transformers para generar etiquetas con tipos de discursos de odio.
-El modelo utilizado para este etiquetado lleva por nombre "beto-contextualized-hate-speech" en Hugging Face y fue elegido ya que está entrenado con datos recolectados en Argentina.
-
----
-
-Jupyter Notebooks creados por Fernanda Aguirre
+website:
+  navbar:
+    background: success
+    search: true
+  sidebar:
+    style: "docked"
+    contents:
+      - href: index.qmd
+        text: Home
+      - section: "Ataques a periodistas"
+        contents:
+          - text: "Análisis general"
+            url: pages/analisis_general.ipynb
+  repo-url: https://github.com/DataCritica/elecciones-argentina-2023
+  repo-actions: [edit, issue]

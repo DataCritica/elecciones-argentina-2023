@@ -134,3 +134,4 @@ data/
 
 # Secret files
 config.ini
+/.quarto/
