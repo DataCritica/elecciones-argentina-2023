@@ -4673,8 +4673,8 @@ require(['plotly'], function(Plotly) {
 <div class="cell" data-execution_count="3">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>df_attacks <span class="op">=</span> attacks.loc[attacks[<span class="st">&#39;to_journalist&#39;</span>].isin([USERNAME])]</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;Número de ataques: </span><span class="sc">{</span><span class="bu">len</span>(df_attacks)<span class="sc">}</span><span class="ss">&#39;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>df_attacks <span class="op">=</span> attacks.loc[attacks[<span class="st">&quot;to_journalist&quot;</span>].isin([USERNAME])]</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Número de ataques: </span><span class="sc">{</span><span class="bu">len</span>(df_attacks)<span class="sc">}</span><span class="ss">&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Número de ataques: 256</code></pre>
@@ -4683,19 +4683,21 @@ require(['plotly'], function(Plotly) {
 <div class="cell" data-execution_count="4">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>journalist_mentions <span class="op">=</span> <span class="bu">len</span>(df.loc[df[<span class="st">&#39;to_journalist&#39;</span>].isin([USERNAME])])</span>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>journalist_mentions <span class="op">=</span> <span class="bu">len</span>(df.loc[df[<span class="st">&quot;to_journalist&quot;</span>].isin([USERNAME])])</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>journalist_attacks <span class="op">=</span> <span class="bu">len</span>(df_attacks)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>percentage_attacks <span class="op">=</span> (journalist_attacks <span class="op">/</span> journalist_mentions) <span class="op">*</span> <span class="dv">100</span></span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>proportion <span class="op">=</span> (percentage_attacks <span class="op">/</span> <span class="dv">100</span>) <span class="op">*</span> <span class="dv">10</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>proportion_rounded <span class="op">=</span> <span class="bu">round</span>(proportion)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>proportion_rounded <span class="op">=</span> <span class="bu">round</span>(proportion, <span class="dv">1</span>)</span>
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;Aproximadamente </span><span class="sc">{</span>proportion_rounded<span class="sc">}</span><span class="ss"> de cada 10 publicaciones que mencionan a </span><span class="sc">{</span>USERNAME<span class="sc">}</span><span class="ss"> son ataques&#39;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f&quot;Aproximadamente </span><span class="sc">{</span>proportion_rounded<span class="sc">}</span><span class="ss"> de cada 10 publicaciones que mencionan a </span><span class="sc">{</span>USERNAME<span class="sc">}</span><span class="ss"> son ataques&quot;</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>Aproximadamente 1 de cada 10 publicaciones que mencionan a @odonnellmaria son ataques</code></pre>
+<pre><code>Aproximadamente 0.8 de cada 10 publicaciones que mencionan a @odonnellmaria son ataques</code></pre>
 </div>
 </div>
 </section>
