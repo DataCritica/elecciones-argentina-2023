@@ -4672,7 +4672,7 @@ require(['plotly'], function(Plotly) {
 
 <section id="datos" class="level3">
 <h3 class="anchored" data-anchor-id="datos">Datos</h3>
-<div class="cell" data-execution_count="8">
+<div class="cell" data-execution_count="3">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>df_attacks <span class="op">=</span> attacks.loc[attacks[<span class="st">&quot;to_journalist&quot;</span>].isin([USERNAME])]</span>
@@ -4686,7 +4686,7 @@ require(['plotly'], function(Plotly) {
 <section id="frecuencia-de-ataques" class="level3">
 <h3 class="anchored" data-anchor-id="frecuencia-de-ataques">Frecuencia de ataques</h3>
 <p>Proporción de ataques = (Número de ataques / Número de menciones) * 100</p>
-<div class="cell" data-execution_count="9">
+<div class="cell" data-execution_count="4">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>journalist_mentions <span class="op">=</span> <span class="bu">len</span>(df.loc[df[<span class="st">&quot;to_journalist&quot;</span>].isin([USERNAME])])</span>
@@ -4710,15 +4710,15 @@ require(['plotly'], function(Plotly) {
 <section id="frecuencia-de-los-ataques-en-función-del-número-de-seguidores" class="level3">
 <h3 class="anchored" data-anchor-id="frecuencia-de-los-ataques-en-función-del-número-de-seguidores">Frecuencia de los ataques en función del número de seguidores</h3>
 <p>Proporción de ataques por seguidor = Número de ataques / Número de seguidores</p>
-<div class="cell" data-execution_count="10">
+<div class="cell" data-execution_count="5">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>proportion_followers <span class="op">=</span> (<span class="bu">len</span>(df_attacks) <span class="op">/</span> <span class="dv">742466</span>) <span class="op">*</span> <span class="dv">1000</span></span>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>proportion_followers <span class="op">=</span> (<span class="bu">len</span>(df_attacks) <span class="op">/</span> <span class="dv">726000</span>) <span class="op">*</span> <span class="dv">1000</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>formatted_proportion <span class="op">=</span> <span class="st">&quot;</span><span class="sc">{:.2f}</span><span class="st">&quot;</span>.<span class="bu">format</span>(proportion_followers)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Por cada 1K seguidores, hubo </span><span class="sc">{</span>formatted_proportion<span class="sc">}</span><span class="ss"> ataques para </span><span class="sc">{</span>USERNAME<span class="sc">}</span><span class="ss">&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Por cada 1K seguidores, aproximadamente hubo </span><span class="sc">{</span>formatted_proportion<span class="sc">}</span><span class="ss"> ataques para </span><span class="sc">{</span>USERNAME<span class="sc">}</span><span class="ss">&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>Por cada 1K seguidores, hubo 0.21 ataques para @vivicanosaok</code></pre>
+<pre><code>Por cada 1K seguidores, aproximadamente hubo 0.22 ataques para @vivicanosaok</code></pre>
 </div>
 </div>
 </section>
