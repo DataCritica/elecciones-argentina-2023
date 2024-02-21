@@ -4,7 +4,7 @@ title: Análisis de tweets durante las elecciones generales 2023 en Argentina
 
 ## Metodología
 
-Para llevar acabo este análisis de datos, **Data Crítica** analizó los datos recolectados por **Chequeado**. El periodo de los tweets recolectados abarca desde `30-09-2023` hasta `20-11-2023`.
+Para llevar acabo este análisis de datos, **Data Crítica** analizó los datos recolectados por **Chequeado**. El periodo de los tweets recolectados abarca desde `30-09-2023` hasta `2023-11-20`.
 
 Los textos de los tweets fueron clasificados programáticamente utilizando un modelo de machine learning con la librería de Python `transformers` para generar etiquetas con tipos de discursos de odio.
 
