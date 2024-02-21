@@ -5059,7 +5059,7 @@ El 6 % del total de los tweets de las elecciones del balotaje fueron ataques</co
 <span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>formatted_wj <span class="op">=</span> <span class="st">&quot;</span><span class="sc">{:.2f}</span><span class="st">&quot;</span>.<span class="bu">format</span>(wj_proportion_mentions)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div class="cell">
+<div class="cell" data-execution_count="72">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(</span>
@@ -5069,6 +5069,10 @@ El 6 % del total de los tweets de las elecciones del balotaje fueron ataques</co
 <span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f&quot;Por cada 10 menciones, las periodistas mujeres recibieron </span><span class="sc">{</span>formatted_wj<span class="sc">}</span><span class="ss"> ataques&quot;</span></span>
 <span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Por cada 10 menciones, los periodistas hombres recibieron 0.95 ataques
+Por cada 10 menciones, las periodistas mujeres recibieron 0.80 ataques</code></pre>
+</div>
 </div>
 </section>
 <section id="frecuencia-de-los-ataques-en-función-del-número-de-seguidores" class="level3">
@@ -5076,22 +5080,22 @@ El 6 % del total de los tweets de las elecciones del balotaje fueron ataques</co
 <div class="cell" data-execution_count="68">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>mj_proportion_followers <span class="op">=</span> (<span class="fl">1.77</span> <span class="op">+</span> <span class="fl">0.38</span> <span class="op">+</span> <span class="fl">0.34</span> <span class="op">+</span> <span class="fl">0.08</span> <span class="op">+</span> <span class="fl">0.38</span> <span class="op">+</span> <span class="fl">0.15</span>) <span class="op">/</span> <span class="dv">6</span></span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>formatted_mj <span class="op">=</span> <span class="st">&quot;</span><span class="sc">{:.2f}</span><span class="st">&quot;</span>.<span class="bu">format</span>(mj_proportion_followers)</span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>wj_proportion_followers <span class="op">=</span> (<span class="fl">0.44</span> <span class="op">+</span> <span class="fl">1.37</span> <span class="op">+</span> <span class="fl">0.67</span> <span class="op">+</span> <span class="fl">0.79</span> <span class="op">+</span> <span class="fl">0.21</span>) <span class="op">/</span> <span class="dv">5</span></span>
-<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>formatted_wj <span class="op">=</span> <span class="st">&quot;</span><span class="sc">{:.2f}</span><span class="st">&quot;</span>.<span class="bu">format</span>(wj_proportion_followers)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>mj_proportion_followers <span class="op">=</span> (<span class="fl">1.77</span> <span class="op">+</span> <span class="fl">0.38</span> <span class="op">+</span> <span class="fl">0.34</span> <span class="op">+</span> <span class="fl">0.08</span> <span class="op">+</span> <span class="fl">0.38</span> <span class="op">+</span> <span class="fl">0.15</span>) <span class="op">/</span> <span class="dv">6</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>formatted_mj <span class="op">=</span> <span class="st">&quot;</span><span class="sc">{:.2f}</span><span class="st">&quot;</span>.<span class="bu">format</span>(mj_proportion_followers)</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>wj_proportion_followers <span class="op">=</span> (<span class="fl">0.44</span> <span class="op">+</span> <span class="fl">1.37</span> <span class="op">+</span> <span class="fl">0.67</span> <span class="op">+</span> <span class="fl">0.79</span> <span class="op">+</span> <span class="fl">0.21</span>) <span class="op">/</span> <span class="dv">5</span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>formatted_wj <span class="op">=</span> <span class="st">&quot;</span><span class="sc">{:.2f}</span><span class="st">&quot;</span>.<span class="bu">format</span>(wj_proportion_followers)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <div class="cell" data-execution_count="70">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(</span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f&quot;Por cada 1K seguidores, los periodistas hombres recibieron </span><span class="sc">{</span>formatted_mj<span class="sc">}</span><span class="ss"> ataques&quot;</span></span>
-<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(</span>
-<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f&quot;Por cada 1K seguidores, las periodistas mujeres recibieron </span><span class="sc">{</span>formatted_wj<span class="sc">}</span><span class="ss"> ataques&quot;</span></span>
-<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f&quot;Por cada 1K seguidores, los periodistas hombres recibieron </span><span class="sc">{</span>formatted_mj<span class="sc">}</span><span class="ss"> ataques&quot;</span></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f&quot;Por cada 1K seguidores, las periodistas mujeres recibieron </span><span class="sc">{</span>formatted_wj<span class="sc">}</span><span class="ss"> ataques&quot;</span></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Por cada 1K seguidores, los periodistas hombres recibieron 0.52 ataques
@@ -5104,17 +5108,17 @@ Por cada 1K seguidores, las periodistas mujeres recibieron 0.70 ataques</code></
 <div class="cell" data-execution_count="18">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>journalist_posts <span class="op">=</span> df.dropna(subset<span class="op">=</span>[<span class="st">&quot;from_journalist&quot;</span>])</span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>men_journalist_posts <span class="op">=</span> journalist_posts.loc[</span>
-<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>    journalist_posts[<span class="st">&quot;journalist_genre&quot;</span>].isin([<span class="st">&quot;M&quot;</span>])</span>
-<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>women_journalist_posts <span class="op">=</span> journalist_posts.loc[</span>
-<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>    journalist_posts[<span class="st">&quot;journalist_genre&quot;</span>].isin([<span class="st">&quot;H&quot;</span>])</span>
-<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(</span>
-<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f&quot;&quot;&quot;Tweets publicados por periodistas hombres: </span><span class="sc">{</span><span class="bu">len</span>(men_journalist_posts)<span class="sc">}</span><span class="ch">\n</span><span class="ss">Tweets publicados por periodistas mujeres: </span><span class="sc">{</span><span class="bu">len</span>(women_journalist_posts)<span class="sc">}</span><span class="ss">&quot;&quot;&quot;</span></span>
-<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>journalist_posts <span class="op">=</span> df.dropna(subset<span class="op">=</span>[<span class="st">&quot;from_journalist&quot;</span>])</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>men_journalist_posts <span class="op">=</span> journalist_posts.loc[</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>    journalist_posts[<span class="st">&quot;journalist_genre&quot;</span>].isin([<span class="st">&quot;M&quot;</span>])</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>women_journalist_posts <span class="op">=</span> journalist_posts.loc[</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>    journalist_posts[<span class="st">&quot;journalist_genre&quot;</span>].isin([<span class="st">&quot;H&quot;</span>])</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(</span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f&quot;&quot;&quot;Tweets publicados por periodistas hombres: </span><span class="sc">{</span><span class="bu">len</span>(men_journalist_posts)<span class="sc">}</span><span class="ch">\n</span><span class="ss">Tweets publicados por periodistas mujeres: </span><span class="sc">{</span><span class="bu">len</span>(women_journalist_posts)<span class="sc">}</span><span class="ss">&quot;&quot;&quot;</span></span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Tweets publicados por periodistas hombres: 1223
@@ -5127,8 +5131,8 @@ Tweets publicados por periodistas mujeres: 489</code></pre>
 <div class="cell" data-execution_count="19">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>journalist_activity <span class="op">=</span> df[<span class="st">&quot;from_journalist&quot;</span>].value_counts()</span>
-<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>journalist_activity</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>journalist_activity <span class="op">=</span> df[<span class="st">&quot;from_journalist&quot;</span>].value_counts()</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>journalist_activity</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display" data-execution_count="19">
 <pre><code>from_journalist
@@ -5186,34 +5190,34 @@ Name: count, dtype: int64</code></pre>
 <div class="cell" data-execution_count="20">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>men_debate1 <span class="op">=</span> men_journalist_posts.loc[</span>
-<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>    men_journalist_posts[<span class="st">&quot;event&quot;</span>].isin([<span class="st">&quot;1er debate&quot;</span>])</span>
-<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>men_count <span class="op">=</span> men_debate1.groupby(<span class="st">&quot;dt_date&quot;</span>).size().reset_index(name<span class="op">=</span><span class="st">&quot;count&quot;</span>)</span>
-<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>women_debate1 <span class="op">=</span> women_journalist_posts.loc[</span>
-<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>    women_journalist_posts[<span class="st">&quot;event&quot;</span>].isin([<span class="st">&quot;1er debate&quot;</span>])</span>
-<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>women_count <span class="op">=</span> women_debate1.groupby(<span class="st">&quot;dt_date&quot;</span>).size().reset_index(name<span class="op">=</span><span class="st">&quot;count&quot;</span>)</span>
-<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.line()</span>
-<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a>fig.add_scatter(</span>
-<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>men_count[<span class="st">&quot;dt_date&quot;</span>],</span>
-<span id="cb34-14"><a href="#cb34-14" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>men_count[<span class="st">&quot;count&quot;</span>],</span>
-<span id="cb34-15"><a href="#cb34-15" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">&quot;Hombres&quot;</span>,</span>
-<span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">&quot;orange&quot;</span>),</span>
-<span id="cb34-17"><a href="#cb34-17" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">&quot;posts: %</span><span class="sc">{y}</span><span class="st">&quot;</span>,</span>
-<span id="cb34-18"><a href="#cb34-18" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb34-19"><a href="#cb34-19" aria-hidden="true" tabindex="-1"></a>fig.add_scatter(</span>
-<span id="cb34-20"><a href="#cb34-20" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>women_count[<span class="st">&quot;dt_date&quot;</span>],</span>
-<span id="cb34-21"><a href="#cb34-21" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>women_count[<span class="st">&quot;count&quot;</span>],</span>
-<span id="cb34-22"><a href="#cb34-22" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">&quot;Mujeres&quot;</span>,</span>
-<span id="cb34-23"><a href="#cb34-23" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">&quot;purple&quot;</span>),</span>
-<span id="cb34-24"><a href="#cb34-24" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">&quot;posts: %</span><span class="sc">{y}</span><span class="st">&quot;</span>,</span>
-<span id="cb34-25"><a href="#cb34-25" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb34-26"><a href="#cb34-26" aria-hidden="true" tabindex="-1"></a>fig.update_layout(title<span class="op">=</span><span class="st">&quot;Publicaciones de periodistas durante el 1er debate&quot;</span>, width<span class="op">=</span><span class="dv">600</span>)</span>
-<span id="cb34-27"><a href="#cb34-27" aria-hidden="true" tabindex="-1"></a>fig.update_xaxes(<span class="bu">type</span><span class="op">=</span><span class="st">&quot;category&quot;</span>)</span>
-<span id="cb34-28"><a href="#cb34-28" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>men_debate1 <span class="op">=</span> men_journalist_posts.loc[</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>    men_journalist_posts[<span class="st">&quot;event&quot;</span>].isin([<span class="st">&quot;1er debate&quot;</span>])</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>men_count <span class="op">=</span> men_debate1.groupby(<span class="st">&quot;dt_date&quot;</span>).size().reset_index(name<span class="op">=</span><span class="st">&quot;count&quot;</span>)</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>women_debate1 <span class="op">=</span> women_journalist_posts.loc[</span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>    women_journalist_posts[<span class="st">&quot;event&quot;</span>].isin([<span class="st">&quot;1er debate&quot;</span>])</span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>women_count <span class="op">=</span> women_debate1.groupby(<span class="st">&quot;dt_date&quot;</span>).size().reset_index(name<span class="op">=</span><span class="st">&quot;count&quot;</span>)</span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.line()</span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a>fig.add_scatter(</span>
+<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>men_count[<span class="st">&quot;dt_date&quot;</span>],</span>
+<span id="cb35-14"><a href="#cb35-14" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>men_count[<span class="st">&quot;count&quot;</span>],</span>
+<span id="cb35-15"><a href="#cb35-15" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">&quot;Hombres&quot;</span>,</span>
+<span id="cb35-16"><a href="#cb35-16" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">&quot;orange&quot;</span>),</span>
+<span id="cb35-17"><a href="#cb35-17" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">&quot;posts: %</span><span class="sc">{y}</span><span class="st">&quot;</span>,</span>
+<span id="cb35-18"><a href="#cb35-18" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb35-19"><a href="#cb35-19" aria-hidden="true" tabindex="-1"></a>fig.add_scatter(</span>
+<span id="cb35-20"><a href="#cb35-20" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>women_count[<span class="st">&quot;dt_date&quot;</span>],</span>
+<span id="cb35-21"><a href="#cb35-21" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>women_count[<span class="st">&quot;count&quot;</span>],</span>
+<span id="cb35-22"><a href="#cb35-22" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">&quot;Mujeres&quot;</span>,</span>
+<span id="cb35-23"><a href="#cb35-23" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">&quot;purple&quot;</span>),</span>
+<span id="cb35-24"><a href="#cb35-24" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">&quot;posts: %</span><span class="sc">{y}</span><span class="st">&quot;</span>,</span>
+<span id="cb35-25"><a href="#cb35-25" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb35-26"><a href="#cb35-26" aria-hidden="true" tabindex="-1"></a>fig.update_layout(title<span class="op">=</span><span class="st">&quot;Publicaciones de periodistas durante el 1er debate&quot;</span>, width<span class="op">=</span><span class="dv">600</span>)</span>
+<span id="cb35-27"><a href="#cb35-27" aria-hidden="true" tabindex="-1"></a>fig.update_xaxes(<span class="bu">type</span><span class="op">=</span><span class="st">&quot;category&quot;</span>)</span>
+<span id="cb35-28"><a href="#cb35-28" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 
@@ -5247,41 +5251,41 @@ if (outputEl) {{
 <div class="cell" data-execution_count="21">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> count_posts_by_gender(df, event):</span>
-<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
-<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="co">    This function takes in a DataFrame of journalist posts and an event string,</span></span>
-<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="co">    and returns a new DataFrame with the count of posts by date for that event</span></span>
-<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a><span class="co">    and gender.</span></span>
-<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
-<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>    debate_posts <span class="op">=</span> df[df[<span class="st">&quot;event&quot;</span>].eq(event)]  <span class="co"># filter posts by event</span></span>
-<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (</span>
-<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>        debate_posts.groupby(<span class="st">&quot;dt_date&quot;</span>).size().reset_index(name<span class="op">=</span><span class="st">&quot;count&quot;</span>)</span>
-<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a>    )  <span class="co"># group by date and count</span></span>
-<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a><span class="co"># get posts for the 2nd debate for male and female journalists</span></span>
-<span id="cb35-14"><a href="#cb35-14" aria-hidden="true" tabindex="-1"></a>men_debate2 <span class="op">=</span> count_posts_by_gender(men_journalist_posts, <span class="st">&quot;2do debate&quot;</span>)</span>
-<span id="cb35-15"><a href="#cb35-15" aria-hidden="true" tabindex="-1"></a>women_debate2 <span class="op">=</span> count_posts_by_gender(women_journalist_posts, <span class="st">&quot;2do debate&quot;</span>)</span>
-<span id="cb35-16"><a href="#cb35-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-17"><a href="#cb35-17" aria-hidden="true" tabindex="-1"></a><span class="co"># create a line plot of post counts by date for male and female journalists</span></span>
-<span id="cb35-18"><a href="#cb35-18" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.line()</span>
-<span id="cb35-19"><a href="#cb35-19" aria-hidden="true" tabindex="-1"></a>fig.add_scatter(</span>
-<span id="cb35-20"><a href="#cb35-20" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>men_debate2[<span class="st">&quot;dt_date&quot;</span>],</span>
-<span id="cb35-21"><a href="#cb35-21" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>men_debate2[<span class="st">&quot;count&quot;</span>],</span>
-<span id="cb35-22"><a href="#cb35-22" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">&quot;Hombres&quot;</span>,</span>
-<span id="cb35-23"><a href="#cb35-23" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">&quot;orange&quot;</span>),</span>
-<span id="cb35-24"><a href="#cb35-24" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">&quot;posts: %</span><span class="sc">{y}</span><span class="st">&quot;</span>,</span>
-<span id="cb35-25"><a href="#cb35-25" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb35-26"><a href="#cb35-26" aria-hidden="true" tabindex="-1"></a>fig.add_scatter(</span>
-<span id="cb35-27"><a href="#cb35-27" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>women_debate2[<span class="st">&quot;dt_date&quot;</span>],</span>
-<span id="cb35-28"><a href="#cb35-28" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>women_debate2[<span class="st">&quot;count&quot;</span>],</span>
-<span id="cb35-29"><a href="#cb35-29" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">&quot;Mujeres&quot;</span>,</span>
-<span id="cb35-30"><a href="#cb35-30" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">&quot;purple&quot;</span>),</span>
-<span id="cb35-31"><a href="#cb35-31" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">&quot;posts: %</span><span class="sc">{y}</span><span class="st">&quot;</span>,</span>
-<span id="cb35-32"><a href="#cb35-32" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb35-33"><a href="#cb35-33" aria-hidden="true" tabindex="-1"></a>fig.update_layout(title<span class="op">=</span><span class="st">&quot;Publicaciones de periodistas durante el 2do debate&quot;</span>, width<span class="op">=</span><span class="dv">600</span>)</span>
-<span id="cb35-34"><a href="#cb35-34" aria-hidden="true" tabindex="-1"></a>fig.update_xaxes(<span class="bu">type</span><span class="op">=</span><span class="st">&quot;category&quot;</span>)</span>
-<span id="cb35-35"><a href="#cb35-35" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> count_posts_by_gender(df, event):</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="co">    This function takes in a DataFrame of journalist posts and an event string,</span></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a><span class="co">    and returns a new DataFrame with the count of posts by date for that event</span></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a><span class="co">    and gender.</span></span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>    debate_posts <span class="op">=</span> df[df[<span class="st">&quot;event&quot;</span>].eq(event)]  <span class="co"># filter posts by event</span></span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (</span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>        debate_posts.groupby(<span class="st">&quot;dt_date&quot;</span>).size().reset_index(name<span class="op">=</span><span class="st">&quot;count&quot;</span>)</span>
+<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a>    )  <span class="co"># group by date and count</span></span>
+<span id="cb36-11"><a href="#cb36-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-12"><a href="#cb36-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-13"><a href="#cb36-13" aria-hidden="true" tabindex="-1"></a><span class="co"># get posts for the 2nd debate for male and female journalists</span></span>
+<span id="cb36-14"><a href="#cb36-14" aria-hidden="true" tabindex="-1"></a>men_debate2 <span class="op">=</span> count_posts_by_gender(men_journalist_posts, <span class="st">&quot;2do debate&quot;</span>)</span>
+<span id="cb36-15"><a href="#cb36-15" aria-hidden="true" tabindex="-1"></a>women_debate2 <span class="op">=</span> count_posts_by_gender(women_journalist_posts, <span class="st">&quot;2do debate&quot;</span>)</span>
+<span id="cb36-16"><a href="#cb36-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-17"><a href="#cb36-17" aria-hidden="true" tabindex="-1"></a><span class="co"># create a line plot of post counts by date for male and female journalists</span></span>
+<span id="cb36-18"><a href="#cb36-18" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.line()</span>
+<span id="cb36-19"><a href="#cb36-19" aria-hidden="true" tabindex="-1"></a>fig.add_scatter(</span>
+<span id="cb36-20"><a href="#cb36-20" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>men_debate2[<span class="st">&quot;dt_date&quot;</span>],</span>
+<span id="cb36-21"><a href="#cb36-21" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>men_debate2[<span class="st">&quot;count&quot;</span>],</span>
+<span id="cb36-22"><a href="#cb36-22" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">&quot;Hombres&quot;</span>,</span>
+<span id="cb36-23"><a href="#cb36-23" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">&quot;orange&quot;</span>),</span>
+<span id="cb36-24"><a href="#cb36-24" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">&quot;posts: %</span><span class="sc">{y}</span><span class="st">&quot;</span>,</span>
+<span id="cb36-25"><a href="#cb36-25" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb36-26"><a href="#cb36-26" aria-hidden="true" tabindex="-1"></a>fig.add_scatter(</span>
+<span id="cb36-27"><a href="#cb36-27" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>women_debate2[<span class="st">&quot;dt_date&quot;</span>],</span>
+<span id="cb36-28"><a href="#cb36-28" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>women_debate2[<span class="st">&quot;count&quot;</span>],</span>
+<span id="cb36-29"><a href="#cb36-29" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">&quot;Mujeres&quot;</span>,</span>
+<span id="cb36-30"><a href="#cb36-30" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">&quot;purple&quot;</span>),</span>
+<span id="cb36-31"><a href="#cb36-31" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">&quot;posts: %</span><span class="sc">{y}</span><span class="st">&quot;</span>,</span>
+<span id="cb36-32"><a href="#cb36-32" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb36-33"><a href="#cb36-33" aria-hidden="true" tabindex="-1"></a>fig.update_layout(title<span class="op">=</span><span class="st">&quot;Publicaciones de periodistas durante el 2do debate&quot;</span>, width<span class="op">=</span><span class="dv">600</span>)</span>
+<span id="cb36-34"><a href="#cb36-34" aria-hidden="true" tabindex="-1"></a>fig.update_xaxes(<span class="bu">type</span><span class="op">=</span><span class="st">&quot;category&quot;</span>)</span>
+<span id="cb36-35"><a href="#cb36-35" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 
@@ -5315,36 +5319,36 @@ if (outputEl) {{
 <div class="cell" data-execution_count="25">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>men_elecciones_gen <span class="op">=</span> men_journalist_posts.loc[</span>
-<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>    men_journalist_posts[<span class="st">&quot;event&quot;</span>].isin([<span class="st">&quot;elecciones generales&quot;</span>])</span>
-<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>men_count <span class="op">=</span> men_elecciones_gen.groupby(<span class="st">&quot;dt_date&quot;</span>).size().reset_index(name<span class="op">=</span><span class="st">&quot;count&quot;</span>)</span>
-<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>women_elecciones_gen <span class="op">=</span> women_journalist_posts.loc[</span>
-<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>    women_journalist_posts[<span class="st">&quot;event&quot;</span>].isin([<span class="st">&quot;elecciones generales&quot;</span>])</span>
-<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>women_count <span class="op">=</span> women_elecciones_gen.groupby(<span class="st">&quot;dt_date&quot;</span>).size().reset_index(name<span class="op">=</span><span class="st">&quot;count&quot;</span>)</span>
-<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb36-11"><a href="#cb36-11" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.line()</span>
-<span id="cb36-12"><a href="#cb36-12" aria-hidden="true" tabindex="-1"></a>fig.add_scatter(</span>
-<span id="cb36-13"><a href="#cb36-13" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>men_count[<span class="st">&quot;dt_date&quot;</span>],</span>
-<span id="cb36-14"><a href="#cb36-14" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>men_count[<span class="st">&quot;count&quot;</span>],</span>
-<span id="cb36-15"><a href="#cb36-15" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">&quot;Hombres&quot;</span>,</span>
-<span id="cb36-16"><a href="#cb36-16" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">&quot;orange&quot;</span>),</span>
-<span id="cb36-17"><a href="#cb36-17" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">&quot;posts: %</span><span class="sc">{y}</span><span class="st">&quot;</span>,</span>
-<span id="cb36-18"><a href="#cb36-18" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb36-19"><a href="#cb36-19" aria-hidden="true" tabindex="-1"></a>fig.add_scatter(</span>
-<span id="cb36-20"><a href="#cb36-20" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>women_count[<span class="st">&quot;dt_date&quot;</span>],</span>
-<span id="cb36-21"><a href="#cb36-21" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>women_count[<span class="st">&quot;count&quot;</span>],</span>
-<span id="cb36-22"><a href="#cb36-22" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">&quot;Mujeres&quot;</span>,</span>
-<span id="cb36-23"><a href="#cb36-23" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">&quot;purple&quot;</span>),</span>
-<span id="cb36-24"><a href="#cb36-24" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">&quot;posts: %</span><span class="sc">{y}</span><span class="st">&quot;</span>,</span>
-<span id="cb36-25"><a href="#cb36-25" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb36-26"><a href="#cb36-26" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
-<span id="cb36-27"><a href="#cb36-27" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">&quot;Publicaciones de periodistas durante las elecciones generales&quot;</span>, width<span class="op">=</span><span class="dv">600</span></span>
-<span id="cb36-28"><a href="#cb36-28" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb36-29"><a href="#cb36-29" aria-hidden="true" tabindex="-1"></a>fig.update_xaxes(<span class="bu">type</span><span class="op">=</span><span class="st">&quot;category&quot;</span>)</span>
-<span id="cb36-30"><a href="#cb36-30" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>men_elecciones_gen <span class="op">=</span> men_journalist_posts.loc[</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>    men_journalist_posts[<span class="st">&quot;event&quot;</span>].isin([<span class="st">&quot;elecciones generales&quot;</span>])</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>men_count <span class="op">=</span> men_elecciones_gen.groupby(<span class="st">&quot;dt_date&quot;</span>).size().reset_index(name<span class="op">=</span><span class="st">&quot;count&quot;</span>)</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>women_elecciones_gen <span class="op">=</span> women_journalist_posts.loc[</span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>    women_journalist_posts[<span class="st">&quot;event&quot;</span>].isin([<span class="st">&quot;elecciones generales&quot;</span>])</span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>women_count <span class="op">=</span> women_elecciones_gen.groupby(<span class="st">&quot;dt_date&quot;</span>).size().reset_index(name<span class="op">=</span><span class="st">&quot;count&quot;</span>)</span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.line()</span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a>fig.add_scatter(</span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>men_count[<span class="st">&quot;dt_date&quot;</span>],</span>
+<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>men_count[<span class="st">&quot;count&quot;</span>],</span>
+<span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">&quot;Hombres&quot;</span>,</span>
+<span id="cb37-16"><a href="#cb37-16" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">&quot;orange&quot;</span>),</span>
+<span id="cb37-17"><a href="#cb37-17" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">&quot;posts: %</span><span class="sc">{y}</span><span class="st">&quot;</span>,</span>
+<span id="cb37-18"><a href="#cb37-18" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb37-19"><a href="#cb37-19" aria-hidden="true" tabindex="-1"></a>fig.add_scatter(</span>
+<span id="cb37-20"><a href="#cb37-20" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>women_count[<span class="st">&quot;dt_date&quot;</span>],</span>
+<span id="cb37-21"><a href="#cb37-21" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>women_count[<span class="st">&quot;count&quot;</span>],</span>
+<span id="cb37-22"><a href="#cb37-22" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">&quot;Mujeres&quot;</span>,</span>
+<span id="cb37-23"><a href="#cb37-23" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">&quot;purple&quot;</span>),</span>
+<span id="cb37-24"><a href="#cb37-24" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">&quot;posts: %</span><span class="sc">{y}</span><span class="st">&quot;</span>,</span>
+<span id="cb37-25"><a href="#cb37-25" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb37-26"><a href="#cb37-26" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb37-27"><a href="#cb37-27" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">&quot;Publicaciones de periodistas durante las elecciones generales&quot;</span>, width<span class="op">=</span><span class="dv">600</span></span>
+<span id="cb37-28"><a href="#cb37-28" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb37-29"><a href="#cb37-29" aria-hidden="true" tabindex="-1"></a>fig.update_xaxes(<span class="bu">type</span><span class="op">=</span><span class="st">&quot;category&quot;</span>)</span>
+<span id="cb37-30"><a href="#cb37-30" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 
@@ -5378,36 +5382,36 @@ if (outputEl) {{
 <div class="cell" data-execution_count="26">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>men_debate_balotaje <span class="op">=</span> men_journalist_posts.loc[</span>
-<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>    men_journalist_posts[<span class="st">&quot;event&quot;</span>].isin([<span class="st">&quot;debate balotaje&quot;</span>])</span>
-<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>men_count <span class="op">=</span> men_debate_balotaje.groupby(<span class="st">&quot;dt_date&quot;</span>).size().reset_index(name<span class="op">=</span><span class="st">&quot;count&quot;</span>)</span>
-<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>women_debate_balotaje <span class="op">=</span> women_journalist_posts.loc[</span>
-<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>    women_journalist_posts[<span class="st">&quot;event&quot;</span>].isin([<span class="st">&quot;debate balotaje&quot;</span>])</span>
-<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>women_count <span class="op">=</span> women_debate_balotaje.groupby(<span class="st">&quot;dt_date&quot;</span>).size().reset_index(name<span class="op">=</span><span class="st">&quot;count&quot;</span>)</span>
-<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.line()</span>
-<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a>fig.add_scatter(</span>
-<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>men_count[<span class="st">&quot;dt_date&quot;</span>],</span>
-<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>men_count[<span class="st">&quot;count&quot;</span>],</span>
-<span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">&quot;Hombres&quot;</span>,</span>
-<span id="cb37-16"><a href="#cb37-16" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">&quot;orange&quot;</span>),</span>
-<span id="cb37-17"><a href="#cb37-17" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">&quot;posts: %</span><span class="sc">{y}</span><span class="st">&quot;</span>,</span>
-<span id="cb37-18"><a href="#cb37-18" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb37-19"><a href="#cb37-19" aria-hidden="true" tabindex="-1"></a>fig.add_scatter(</span>
-<span id="cb37-20"><a href="#cb37-20" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>women_count[<span class="st">&quot;dt_date&quot;</span>],</span>
-<span id="cb37-21"><a href="#cb37-21" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>women_count[<span class="st">&quot;count&quot;</span>],</span>
-<span id="cb37-22"><a href="#cb37-22" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">&quot;Mujeres&quot;</span>,</span>
-<span id="cb37-23"><a href="#cb37-23" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">&quot;purple&quot;</span>),</span>
-<span id="cb37-24"><a href="#cb37-24" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">&quot;posts: %</span><span class="sc">{y}</span><span class="st">&quot;</span>,</span>
-<span id="cb37-25"><a href="#cb37-25" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb37-26"><a href="#cb37-26" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
-<span id="cb37-27"><a href="#cb37-27" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">&quot;Publicaciones de periodistas durante el debate del balotaje&quot;</span>, width<span class="op">=</span><span class="dv">600</span></span>
-<span id="cb37-28"><a href="#cb37-28" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb37-29"><a href="#cb37-29" aria-hidden="true" tabindex="-1"></a>fig.update_xaxes(<span class="bu">type</span><span class="op">=</span><span class="st">&quot;category&quot;</span>)</span>
-<span id="cb37-30"><a href="#cb37-30" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>men_debate_balotaje <span class="op">=</span> men_journalist_posts.loc[</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>    men_journalist_posts[<span class="st">&quot;event&quot;</span>].isin([<span class="st">&quot;debate balotaje&quot;</span>])</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>men_count <span class="op">=</span> men_debate_balotaje.groupby(<span class="st">&quot;dt_date&quot;</span>).size().reset_index(name<span class="op">=</span><span class="st">&quot;count&quot;</span>)</span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>women_debate_balotaje <span class="op">=</span> women_journalist_posts.loc[</span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>    women_journalist_posts[<span class="st">&quot;event&quot;</span>].isin([<span class="st">&quot;debate balotaje&quot;</span>])</span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a>women_count <span class="op">=</span> women_debate_balotaje.groupby(<span class="st">&quot;dt_date&quot;</span>).size().reset_index(name<span class="op">=</span><span class="st">&quot;count&quot;</span>)</span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.line()</span>
+<span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a>fig.add_scatter(</span>
+<span id="cb38-13"><a href="#cb38-13" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>men_count[<span class="st">&quot;dt_date&quot;</span>],</span>
+<span id="cb38-14"><a href="#cb38-14" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>men_count[<span class="st">&quot;count&quot;</span>],</span>
+<span id="cb38-15"><a href="#cb38-15" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">&quot;Hombres&quot;</span>,</span>
+<span id="cb38-16"><a href="#cb38-16" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">&quot;orange&quot;</span>),</span>
+<span id="cb38-17"><a href="#cb38-17" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">&quot;posts: %</span><span class="sc">{y}</span><span class="st">&quot;</span>,</span>
+<span id="cb38-18"><a href="#cb38-18" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb38-19"><a href="#cb38-19" aria-hidden="true" tabindex="-1"></a>fig.add_scatter(</span>
+<span id="cb38-20"><a href="#cb38-20" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>women_count[<span class="st">&quot;dt_date&quot;</span>],</span>
+<span id="cb38-21"><a href="#cb38-21" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>women_count[<span class="st">&quot;count&quot;</span>],</span>
+<span id="cb38-22"><a href="#cb38-22" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">&quot;Mujeres&quot;</span>,</span>
+<span id="cb38-23"><a href="#cb38-23" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">&quot;purple&quot;</span>),</span>
+<span id="cb38-24"><a href="#cb38-24" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">&quot;posts: %</span><span class="sc">{y}</span><span class="st">&quot;</span>,</span>
+<span id="cb38-25"><a href="#cb38-25" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb38-26"><a href="#cb38-26" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb38-27"><a href="#cb38-27" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">&quot;Publicaciones de periodistas durante el debate del balotaje&quot;</span>, width<span class="op">=</span><span class="dv">600</span></span>
+<span id="cb38-28"><a href="#cb38-28" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb38-29"><a href="#cb38-29" aria-hidden="true" tabindex="-1"></a>fig.update_xaxes(<span class="bu">type</span><span class="op">=</span><span class="st">&quot;category&quot;</span>)</span>
+<span id="cb38-30"><a href="#cb38-30" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 
@@ -5441,38 +5445,38 @@ if (outputEl) {{
 <div class="cell" data-execution_count="27">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>men_elecciones_balotaje <span class="op">=</span> men_journalist_posts.loc[</span>
-<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>    men_journalist_posts[<span class="st">&quot;event&quot;</span>].isin([<span class="st">&quot;elecciones balotaje&quot;</span>])</span>
-<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>men_count <span class="op">=</span> men_elecciones_balotaje.groupby(<span class="st">&quot;dt_date&quot;</span>).size().reset_index(name<span class="op">=</span><span class="st">&quot;count&quot;</span>)</span>
-<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>women_elecciones_balotaje <span class="op">=</span> women_journalist_posts.loc[</span>
-<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>    women_journalist_posts[<span class="st">&quot;event&quot;</span>].isin([<span class="st">&quot;elecciones balotaje&quot;</span>])</span>
-<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a>women_count <span class="op">=</span> (</span>
-<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a>    women_elecciones_balotaje.groupby(<span class="st">&quot;dt_date&quot;</span>).size().reset_index(name<span class="op">=</span><span class="st">&quot;count&quot;</span>)</span>
-<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-13"><a href="#cb38-13" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.line()</span>
-<span id="cb38-14"><a href="#cb38-14" aria-hidden="true" tabindex="-1"></a>fig.add_scatter(</span>
-<span id="cb38-15"><a href="#cb38-15" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>men_count[<span class="st">&quot;dt_date&quot;</span>],</span>
-<span id="cb38-16"><a href="#cb38-16" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>men_count[<span class="st">&quot;count&quot;</span>],</span>
-<span id="cb38-17"><a href="#cb38-17" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">&quot;Hombres&quot;</span>,</span>
-<span id="cb38-18"><a href="#cb38-18" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">&quot;orange&quot;</span>),</span>
-<span id="cb38-19"><a href="#cb38-19" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">&quot;posts: %</span><span class="sc">{y}</span><span class="st">&quot;</span>,</span>
-<span id="cb38-20"><a href="#cb38-20" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb38-21"><a href="#cb38-21" aria-hidden="true" tabindex="-1"></a>fig.add_scatter(</span>
-<span id="cb38-22"><a href="#cb38-22" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>women_count[<span class="st">&quot;dt_date&quot;</span>],</span>
-<span id="cb38-23"><a href="#cb38-23" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>women_count[<span class="st">&quot;count&quot;</span>],</span>
-<span id="cb38-24"><a href="#cb38-24" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">&quot;Mujeres&quot;</span>,</span>
-<span id="cb38-25"><a href="#cb38-25" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">&quot;purple&quot;</span>),</span>
-<span id="cb38-26"><a href="#cb38-26" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">&quot;posts: %</span><span class="sc">{y}</span><span class="st">&quot;</span>,</span>
-<span id="cb38-27"><a href="#cb38-27" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb38-28"><a href="#cb38-28" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
-<span id="cb38-29"><a href="#cb38-29" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">&quot;Publicaciones de periodistas durante las elecciones del balotaje&quot;</span>, width<span class="op">=</span><span class="dv">600</span></span>
-<span id="cb38-30"><a href="#cb38-30" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb38-31"><a href="#cb38-31" aria-hidden="true" tabindex="-1"></a>fig.update_xaxes(<span class="bu">type</span><span class="op">=</span><span class="st">&quot;category&quot;</span>)</span>
-<span id="cb38-32"><a href="#cb38-32" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>men_elecciones_balotaje <span class="op">=</span> men_journalist_posts.loc[</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>    men_journalist_posts[<span class="st">&quot;event&quot;</span>].isin([<span class="st">&quot;elecciones balotaje&quot;</span>])</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>men_count <span class="op">=</span> men_elecciones_balotaje.groupby(<span class="st">&quot;dt_date&quot;</span>).size().reset_index(name<span class="op">=</span><span class="st">&quot;count&quot;</span>)</span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>women_elecciones_balotaje <span class="op">=</span> women_journalist_posts.loc[</span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a>    women_journalist_posts[<span class="st">&quot;event&quot;</span>].isin([<span class="st">&quot;elecciones balotaje&quot;</span>])</span>
+<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb39-9"><a href="#cb39-9" aria-hidden="true" tabindex="-1"></a>women_count <span class="op">=</span> (</span>
+<span id="cb39-10"><a href="#cb39-10" aria-hidden="true" tabindex="-1"></a>    women_elecciones_balotaje.groupby(<span class="st">&quot;dt_date&quot;</span>).size().reset_index(name<span class="op">=</span><span class="st">&quot;count&quot;</span>)</span>
+<span id="cb39-11"><a href="#cb39-11" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb39-12"><a href="#cb39-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-13"><a href="#cb39-13" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.line()</span>
+<span id="cb39-14"><a href="#cb39-14" aria-hidden="true" tabindex="-1"></a>fig.add_scatter(</span>
+<span id="cb39-15"><a href="#cb39-15" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>men_count[<span class="st">&quot;dt_date&quot;</span>],</span>
+<span id="cb39-16"><a href="#cb39-16" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>men_count[<span class="st">&quot;count&quot;</span>],</span>
+<span id="cb39-17"><a href="#cb39-17" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">&quot;Hombres&quot;</span>,</span>
+<span id="cb39-18"><a href="#cb39-18" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">&quot;orange&quot;</span>),</span>
+<span id="cb39-19"><a href="#cb39-19" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">&quot;posts: %</span><span class="sc">{y}</span><span class="st">&quot;</span>,</span>
+<span id="cb39-20"><a href="#cb39-20" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb39-21"><a href="#cb39-21" aria-hidden="true" tabindex="-1"></a>fig.add_scatter(</span>
+<span id="cb39-22"><a href="#cb39-22" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>women_count[<span class="st">&quot;dt_date&quot;</span>],</span>
+<span id="cb39-23"><a href="#cb39-23" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>women_count[<span class="st">&quot;count&quot;</span>],</span>
+<span id="cb39-24"><a href="#cb39-24" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">&quot;Mujeres&quot;</span>,</span>
+<span id="cb39-25"><a href="#cb39-25" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">&quot;purple&quot;</span>),</span>
+<span id="cb39-26"><a href="#cb39-26" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">&quot;posts: %</span><span class="sc">{y}</span><span class="st">&quot;</span>,</span>
+<span id="cb39-27"><a href="#cb39-27" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb39-28"><a href="#cb39-28" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb39-29"><a href="#cb39-29" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">&quot;Publicaciones de periodistas durante las elecciones del balotaje&quot;</span>, width<span class="op">=</span><span class="dv">600</span></span>
+<span id="cb39-30"><a href="#cb39-30" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb39-31"><a href="#cb39-31" aria-hidden="true" tabindex="-1"></a>fig.update_xaxes(<span class="bu">type</span><span class="op">=</span><span class="st">&quot;category&quot;</span>)</span>
+<span id="cb39-32"><a href="#cb39-32" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 
@@ -5509,7 +5513,7 @@ if (outputEl) {{
 <div class="cell" data-execution_count="28">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>attacks_men[<span class="st">&quot;event&quot;</span>].value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>attacks_men[<span class="st">&quot;event&quot;</span>].value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display" data-execution_count="28">
 <pre><code>event
@@ -5527,7 +5531,7 @@ Name: count, dtype: int64</code></pre>
 <div class="cell" data-execution_count="29">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>attacks_women[<span class="st">&quot;event&quot;</span>].value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>attacks_women[<span class="st">&quot;event&quot;</span>].value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display" data-execution_count="29">
 <pre><code>event
@@ -5546,40 +5550,40 @@ Name: count, dtype: int64</code></pre>
 <div class="cell" data-execution_count="30">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>attacks[<span class="st">&quot;hashtags&quot;</span>] <span class="op">=</span> attacks[<span class="st">&quot;text&quot;</span>].<span class="bu">apply</span>(</span>
-<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">lambda</span> x: (</span>
-<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>        np.nan</span>
-<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> pd.isnull(x) <span class="kw">or</span> <span class="kw">not</span> <span class="bu">isinstance</span>(x, <span class="bu">str</span>) <span class="kw">or</span> <span class="bu">len</span>(re.findall(<span class="vs">r&quot;#\w+&quot;</span>, x)) <span class="op">==</span> <span class="dv">0</span></span>
-<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> re.findall(<span class="vs">r&quot;#\w+&quot;</span>, x)</span>
-<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a>attacks[<span class="st">&quot;hashtags&quot;</span>] <span class="op">=</span> attacks[<span class="st">&quot;hashtags&quot;</span>].<span class="bu">apply</span>(</span>
-<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">lambda</span> x: <span class="st">&quot;, &quot;</span>.join(x) <span class="cf">if</span> <span class="bu">isinstance</span>(x, <span class="bu">list</span>) <span class="cf">else</span> x</span>
-<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb43-13"><a href="#cb43-13" aria-hidden="true" tabindex="-1"></a><span class="co"># convert dataframe column to list</span></span>
-<span id="cb43-14"><a href="#cb43-14" aria-hidden="true" tabindex="-1"></a>hashtags <span class="op">=</span> attacks[<span class="st">&quot;hashtags&quot;</span>].unique()</span>
-<span id="cb43-15"><a href="#cb43-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb43-16"><a href="#cb43-16" aria-hidden="true" tabindex="-1"></a><span class="co"># remove nan items from list</span></span>
-<span id="cb43-17"><a href="#cb43-17" aria-hidden="true" tabindex="-1"></a>hashtags <span class="op">=</span> [x <span class="cf">for</span> x <span class="kw">in</span> hashtags <span class="cf">if</span> <span class="kw">not</span> pd.isna(x)]</span>
-<span id="cb43-18"><a href="#cb43-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb43-19"><a href="#cb43-19" aria-hidden="true" tabindex="-1"></a><span class="co"># split items into a list based on a delimiter</span></span>
-<span id="cb43-20"><a href="#cb43-20" aria-hidden="true" tabindex="-1"></a>hashtags <span class="op">=</span> [x.split(<span class="st">&quot;,&quot;</span>) <span class="cf">for</span> x <span class="kw">in</span> hashtags]</span>
-<span id="cb43-21"><a href="#cb43-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb43-22"><a href="#cb43-22" aria-hidden="true" tabindex="-1"></a><span class="co"># flatten list of lists</span></span>
-<span id="cb43-23"><a href="#cb43-23" aria-hidden="true" tabindex="-1"></a>hashtags <span class="op">=</span> [item <span class="cf">for</span> sublist <span class="kw">in</span> hashtags <span class="cf">for</span> item <span class="kw">in</span> sublist]</span>
-<span id="cb43-24"><a href="#cb43-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb43-25"><a href="#cb43-25" aria-hidden="true" tabindex="-1"></a><span class="co"># remove whitespaces</span></span>
-<span id="cb43-26"><a href="#cb43-26" aria-hidden="true" tabindex="-1"></a>hashtags <span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(<span class="kw">lambda</span> x: x.replace(<span class="st">&quot; &quot;</span>, <span class="st">&quot;&quot;</span>), hashtags))</span>
-<span id="cb43-27"><a href="#cb43-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb43-28"><a href="#cb43-28" aria-hidden="true" tabindex="-1"></a><span class="co"># count items on list</span></span>
-<span id="cb43-29"><a href="#cb43-29" aria-hidden="true" tabindex="-1"></a>hashtags_count <span class="op">=</span> pd.Series(hashtags).value_counts()</span>
-<span id="cb43-30"><a href="#cb43-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb43-31"><a href="#cb43-31" aria-hidden="true" tabindex="-1"></a><span class="co"># return first n rows in descending order</span></span>
-<span id="cb43-32"><a href="#cb43-32" aria-hidden="true" tabindex="-1"></a>top_hashtags <span class="op">=</span> hashtags_count.nlargest(<span class="dv">20</span>)</span>
-<span id="cb43-33"><a href="#cb43-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb43-34"><a href="#cb43-34" aria-hidden="true" tabindex="-1"></a>top_hashtags</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>attacks[<span class="st">&quot;hashtags&quot;</span>] <span class="op">=</span> attacks[<span class="st">&quot;text&quot;</span>].<span class="bu">apply</span>(</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">lambda</span> x: (</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>        np.nan</span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> pd.isnull(x) <span class="kw">or</span> <span class="kw">not</span> <span class="bu">isinstance</span>(x, <span class="bu">str</span>) <span class="kw">or</span> <span class="bu">len</span>(re.findall(<span class="vs">r&quot;#\w+&quot;</span>, x)) <span class="op">==</span> <span class="dv">0</span></span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> re.findall(<span class="vs">r&quot;#\w+&quot;</span>, x)</span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a>attacks[<span class="st">&quot;hashtags&quot;</span>] <span class="op">=</span> attacks[<span class="st">&quot;hashtags&quot;</span>].<span class="bu">apply</span>(</span>
+<span id="cb44-10"><a href="#cb44-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">lambda</span> x: <span class="st">&quot;, &quot;</span>.join(x) <span class="cf">if</span> <span class="bu">isinstance</span>(x, <span class="bu">list</span>) <span class="cf">else</span> x</span>
+<span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb44-12"><a href="#cb44-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-13"><a href="#cb44-13" aria-hidden="true" tabindex="-1"></a><span class="co"># convert dataframe column to list</span></span>
+<span id="cb44-14"><a href="#cb44-14" aria-hidden="true" tabindex="-1"></a>hashtags <span class="op">=</span> attacks[<span class="st">&quot;hashtags&quot;</span>].unique()</span>
+<span id="cb44-15"><a href="#cb44-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-16"><a href="#cb44-16" aria-hidden="true" tabindex="-1"></a><span class="co"># remove nan items from list</span></span>
+<span id="cb44-17"><a href="#cb44-17" aria-hidden="true" tabindex="-1"></a>hashtags <span class="op">=</span> [x <span class="cf">for</span> x <span class="kw">in</span> hashtags <span class="cf">if</span> <span class="kw">not</span> pd.isna(x)]</span>
+<span id="cb44-18"><a href="#cb44-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-19"><a href="#cb44-19" aria-hidden="true" tabindex="-1"></a><span class="co"># split items into a list based on a delimiter</span></span>
+<span id="cb44-20"><a href="#cb44-20" aria-hidden="true" tabindex="-1"></a>hashtags <span class="op">=</span> [x.split(<span class="st">&quot;,&quot;</span>) <span class="cf">for</span> x <span class="kw">in</span> hashtags]</span>
+<span id="cb44-21"><a href="#cb44-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-22"><a href="#cb44-22" aria-hidden="true" tabindex="-1"></a><span class="co"># flatten list of lists</span></span>
+<span id="cb44-23"><a href="#cb44-23" aria-hidden="true" tabindex="-1"></a>hashtags <span class="op">=</span> [item <span class="cf">for</span> sublist <span class="kw">in</span> hashtags <span class="cf">for</span> item <span class="kw">in</span> sublist]</span>
+<span id="cb44-24"><a href="#cb44-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-25"><a href="#cb44-25" aria-hidden="true" tabindex="-1"></a><span class="co"># remove whitespaces</span></span>
+<span id="cb44-26"><a href="#cb44-26" aria-hidden="true" tabindex="-1"></a>hashtags <span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(<span class="kw">lambda</span> x: x.replace(<span class="st">&quot; &quot;</span>, <span class="st">&quot;&quot;</span>), hashtags))</span>
+<span id="cb44-27"><a href="#cb44-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-28"><a href="#cb44-28" aria-hidden="true" tabindex="-1"></a><span class="co"># count items on list</span></span>
+<span id="cb44-29"><a href="#cb44-29" aria-hidden="true" tabindex="-1"></a>hashtags_count <span class="op">=</span> pd.Series(hashtags).value_counts()</span>
+<span id="cb44-30"><a href="#cb44-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-31"><a href="#cb44-31" aria-hidden="true" tabindex="-1"></a><span class="co"># return first n rows in descending order</span></span>
+<span id="cb44-32"><a href="#cb44-32" aria-hidden="true" tabindex="-1"></a>top_hashtags <span class="op">=</span> hashtags_count.nlargest(<span class="dv">20</span>)</span>
+<span id="cb44-33"><a href="#cb44-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-34"><a href="#cb44-34" aria-hidden="true" tabindex="-1"></a>top_hashtags</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display" data-execution_count="30">
 <pre><code>#SeVanParaSiempre                3
@@ -5612,40 +5616,40 @@ Name: count, dtype: int64</code></pre>
 <div class="cell" data-execution_count="31">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>attacks[<span class="st">&quot;mentions&quot;</span>] <span class="op">=</span> attacks[<span class="st">&quot;text&quot;</span>].<span class="bu">apply</span>(</span>
-<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">lambda</span> x: (</span>
-<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>        np.nan</span>
-<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> pd.isnull(x) <span class="kw">or</span> <span class="kw">not</span> <span class="bu">isinstance</span>(x, <span class="bu">str</span>) <span class="kw">or</span> <span class="bu">len</span>(re.findall(<span class="vs">r&quot;@(\w+)&quot;</span>, x)) <span class="op">==</span> <span class="dv">0</span></span>
-<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> re.findall(<span class="vs">r&quot;@(\w+)&quot;</span>, x)</span>
-<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a>attacks[<span class="st">&quot;mentions&quot;</span>] <span class="op">=</span> attacks[<span class="st">&quot;mentions&quot;</span>].<span class="bu">apply</span>(</span>
-<span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">lambda</span> x: <span class="st">&quot;, &quot;</span>.join(x) <span class="cf">if</span> <span class="bu">isinstance</span>(x, <span class="bu">list</span>) <span class="cf">else</span> x</span>
-<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb45-12"><a href="#cb45-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-13"><a href="#cb45-13" aria-hidden="true" tabindex="-1"></a><span class="co"># convert dataframe column to list</span></span>
-<span id="cb45-14"><a href="#cb45-14" aria-hidden="true" tabindex="-1"></a>mentions <span class="op">=</span> attacks[<span class="st">&quot;mentions&quot;</span>].unique()</span>
-<span id="cb45-15"><a href="#cb45-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-16"><a href="#cb45-16" aria-hidden="true" tabindex="-1"></a><span class="co"># remove nan items from list</span></span>
-<span id="cb45-17"><a href="#cb45-17" aria-hidden="true" tabindex="-1"></a>mentions <span class="op">=</span> [x <span class="cf">for</span> x <span class="kw">in</span> mentions <span class="cf">if</span> <span class="kw">not</span> pd.isna(x)]</span>
-<span id="cb45-18"><a href="#cb45-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-19"><a href="#cb45-19" aria-hidden="true" tabindex="-1"></a><span class="co"># split items into a list based on a delimiter</span></span>
-<span id="cb45-20"><a href="#cb45-20" aria-hidden="true" tabindex="-1"></a>mentions <span class="op">=</span> [x.split(<span class="st">&quot;,&quot;</span>) <span class="cf">for</span> x <span class="kw">in</span> mentions]</span>
-<span id="cb45-21"><a href="#cb45-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-22"><a href="#cb45-22" aria-hidden="true" tabindex="-1"></a><span class="co"># flatten list of lists</span></span>
-<span id="cb45-23"><a href="#cb45-23" aria-hidden="true" tabindex="-1"></a>mentions <span class="op">=</span> [item <span class="cf">for</span> sublist <span class="kw">in</span> mentions <span class="cf">for</span> item <span class="kw">in</span> sublist]</span>
-<span id="cb45-24"><a href="#cb45-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-25"><a href="#cb45-25" aria-hidden="true" tabindex="-1"></a><span class="co"># remove whitespaces</span></span>
-<span id="cb45-26"><a href="#cb45-26" aria-hidden="true" tabindex="-1"></a>mentions <span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(<span class="kw">lambda</span> x: x.replace(<span class="st">&quot; &quot;</span>, <span class="st">&quot;&quot;</span>), mentions))</span>
-<span id="cb45-27"><a href="#cb45-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-28"><a href="#cb45-28" aria-hidden="true" tabindex="-1"></a><span class="co"># count items on list</span></span>
-<span id="cb45-29"><a href="#cb45-29" aria-hidden="true" tabindex="-1"></a>mentions_count <span class="op">=</span> pd.Series(mentions).value_counts()</span>
-<span id="cb45-30"><a href="#cb45-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-31"><a href="#cb45-31" aria-hidden="true" tabindex="-1"></a><span class="co"># return first n rows in descending order</span></span>
-<span id="cb45-32"><a href="#cb45-32" aria-hidden="true" tabindex="-1"></a>top_mentions <span class="op">=</span> mentions_count.nlargest(<span class="dv">20</span>)</span>
-<span id="cb45-33"><a href="#cb45-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-34"><a href="#cb45-34" aria-hidden="true" tabindex="-1"></a>top_mentions</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>attacks[<span class="st">&quot;mentions&quot;</span>] <span class="op">=</span> attacks[<span class="st">&quot;text&quot;</span>].<span class="bu">apply</span>(</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">lambda</span> x: (</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>        np.nan</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> pd.isnull(x) <span class="kw">or</span> <span class="kw">not</span> <span class="bu">isinstance</span>(x, <span class="bu">str</span>) <span class="kw">or</span> <span class="bu">len</span>(re.findall(<span class="vs">r&quot;@(\w+)&quot;</span>, x)) <span class="op">==</span> <span class="dv">0</span></span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> re.findall(<span class="vs">r&quot;@(\w+)&quot;</span>, x)</span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>attacks[<span class="st">&quot;mentions&quot;</span>] <span class="op">=</span> attacks[<span class="st">&quot;mentions&quot;</span>].<span class="bu">apply</span>(</span>
+<span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">lambda</span> x: <span class="st">&quot;, &quot;</span>.join(x) <span class="cf">if</span> <span class="bu">isinstance</span>(x, <span class="bu">list</span>) <span class="cf">else</span> x</span>
+<span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb46-12"><a href="#cb46-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-13"><a href="#cb46-13" aria-hidden="true" tabindex="-1"></a><span class="co"># convert dataframe column to list</span></span>
+<span id="cb46-14"><a href="#cb46-14" aria-hidden="true" tabindex="-1"></a>mentions <span class="op">=</span> attacks[<span class="st">&quot;mentions&quot;</span>].unique()</span>
+<span id="cb46-15"><a href="#cb46-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-16"><a href="#cb46-16" aria-hidden="true" tabindex="-1"></a><span class="co"># remove nan items from list</span></span>
+<span id="cb46-17"><a href="#cb46-17" aria-hidden="true" tabindex="-1"></a>mentions <span class="op">=</span> [x <span class="cf">for</span> x <span class="kw">in</span> mentions <span class="cf">if</span> <span class="kw">not</span> pd.isna(x)]</span>
+<span id="cb46-18"><a href="#cb46-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-19"><a href="#cb46-19" aria-hidden="true" tabindex="-1"></a><span class="co"># split items into a list based on a delimiter</span></span>
+<span id="cb46-20"><a href="#cb46-20" aria-hidden="true" tabindex="-1"></a>mentions <span class="op">=</span> [x.split(<span class="st">&quot;,&quot;</span>) <span class="cf">for</span> x <span class="kw">in</span> mentions]</span>
+<span id="cb46-21"><a href="#cb46-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-22"><a href="#cb46-22" aria-hidden="true" tabindex="-1"></a><span class="co"># flatten list of lists</span></span>
+<span id="cb46-23"><a href="#cb46-23" aria-hidden="true" tabindex="-1"></a>mentions <span class="op">=</span> [item <span class="cf">for</span> sublist <span class="kw">in</span> mentions <span class="cf">for</span> item <span class="kw">in</span> sublist]</span>
+<span id="cb46-24"><a href="#cb46-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-25"><a href="#cb46-25" aria-hidden="true" tabindex="-1"></a><span class="co"># remove whitespaces</span></span>
+<span id="cb46-26"><a href="#cb46-26" aria-hidden="true" tabindex="-1"></a>mentions <span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(<span class="kw">lambda</span> x: x.replace(<span class="st">&quot; &quot;</span>, <span class="st">&quot;&quot;</span>), mentions))</span>
+<span id="cb46-27"><a href="#cb46-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-28"><a href="#cb46-28" aria-hidden="true" tabindex="-1"></a><span class="co"># count items on list</span></span>
+<span id="cb46-29"><a href="#cb46-29" aria-hidden="true" tabindex="-1"></a>mentions_count <span class="op">=</span> pd.Series(mentions).value_counts()</span>
+<span id="cb46-30"><a href="#cb46-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-31"><a href="#cb46-31" aria-hidden="true" tabindex="-1"></a><span class="co"># return first n rows in descending order</span></span>
+<span id="cb46-32"><a href="#cb46-32" aria-hidden="true" tabindex="-1"></a>top_mentions <span class="op">=</span> mentions_count.nlargest(<span class="dv">20</span>)</span>
+<span id="cb46-33"><a href="#cb46-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-34"><a href="#cb46-34" aria-hidden="true" tabindex="-1"></a>top_mentions</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display" data-execution_count="31">
 <pre><code>PatoBullrich       5
@@ -5678,33 +5682,33 @@ Name: count, dtype: int64</code></pre>
 <div class="cell" data-execution_count="32">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load the spacy model for Spanish</span></span>
-<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>nlp <span class="op">=</span> spacy.load(<span class="st">&quot;es_core_news_sm&quot;</span>)</span>
-<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a><span class="co"># load stop words for Spanish</span></span>
-<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a>STOP_WORDS <span class="op">=</span> nlp.Defaults.stop_words</span>
-<span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-7"><a href="#cb47-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-8"><a href="#cb47-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to filter stop words</span></span>
-<span id="cb47-9"><a href="#cb47-9" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> filter_stopwords(text):</span>
-<span id="cb47-10"><a href="#cb47-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># lower text</span></span>
-<span id="cb47-11"><a href="#cb47-11" aria-hidden="true" tabindex="-1"></a>    doc <span class="op">=</span> nlp(text.lower())</span>
-<span id="cb47-12"><a href="#cb47-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># filter tokens</span></span>
-<span id="cb47-13"><a href="#cb47-13" aria-hidden="true" tabindex="-1"></a>    tokens <span class="op">=</span> [</span>
-<span id="cb47-14"><a href="#cb47-14" aria-hidden="true" tabindex="-1"></a>        token.text</span>
-<span id="cb47-15"><a href="#cb47-15" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> token <span class="kw">in</span> doc</span>
-<span id="cb47-16"><a href="#cb47-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> token.is_stop <span class="kw">and</span> token.text <span class="kw">not</span> <span class="kw">in</span> STOP_WORDS <span class="kw">and</span> token.is_alpha</span>
-<span id="cb47-17"><a href="#cb47-17" aria-hidden="true" tabindex="-1"></a>    ]</span>
-<span id="cb47-18"><a href="#cb47-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">&quot; &quot;</span>.join(tokens)</span>
-<span id="cb47-19"><a href="#cb47-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-20"><a href="#cb47-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-21"><a href="#cb47-21" aria-hidden="true" tabindex="-1"></a><span class="co"># apply function to dataframe column</span></span>
-<span id="cb47-22"><a href="#cb47-22" aria-hidden="true" tabindex="-1"></a>attacks[<span class="st">&quot;text_pre&quot;</span>] <span class="op">=</span> attacks[<span class="st">&quot;text&quot;</span>].<span class="bu">apply</span>(filter_stopwords)</span>
-<span id="cb47-23"><a href="#cb47-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-24"><a href="#cb47-24" aria-hidden="true" tabindex="-1"></a><span class="co"># count items on column</span></span>
-<span id="cb47-25"><a href="#cb47-25" aria-hidden="true" tabindex="-1"></a>token_counts <span class="op">=</span> attacks[<span class="st">&quot;text_pre&quot;</span>].<span class="bu">str</span>.split(expand<span class="op">=</span><span class="va">True</span>).stack().value_counts()[:<span class="dv">20</span>]</span>
-<span id="cb47-26"><a href="#cb47-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-27"><a href="#cb47-27" aria-hidden="true" tabindex="-1"></a>token_counts</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load the spacy model for Spanish</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>nlp <span class="op">=</span> spacy.load(<span class="st">&quot;es_core_news_sm&quot;</span>)</span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a><span class="co"># load stop words for Spanish</span></span>
+<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a>STOP_WORDS <span class="op">=</span> nlp.Defaults.stop_words</span>
+<span id="cb48-6"><a href="#cb48-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-7"><a href="#cb48-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-8"><a href="#cb48-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to filter stop words</span></span>
+<span id="cb48-9"><a href="#cb48-9" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> filter_stopwords(text):</span>
+<span id="cb48-10"><a href="#cb48-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># lower text</span></span>
+<span id="cb48-11"><a href="#cb48-11" aria-hidden="true" tabindex="-1"></a>    doc <span class="op">=</span> nlp(text.lower())</span>
+<span id="cb48-12"><a href="#cb48-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># filter tokens</span></span>
+<span id="cb48-13"><a href="#cb48-13" aria-hidden="true" tabindex="-1"></a>    tokens <span class="op">=</span> [</span>
+<span id="cb48-14"><a href="#cb48-14" aria-hidden="true" tabindex="-1"></a>        token.text</span>
+<span id="cb48-15"><a href="#cb48-15" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> token <span class="kw">in</span> doc</span>
+<span id="cb48-16"><a href="#cb48-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> token.is_stop <span class="kw">and</span> token.text <span class="kw">not</span> <span class="kw">in</span> STOP_WORDS <span class="kw">and</span> token.is_alpha</span>
+<span id="cb48-17"><a href="#cb48-17" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb48-18"><a href="#cb48-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">&quot; &quot;</span>.join(tokens)</span>
+<span id="cb48-19"><a href="#cb48-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-20"><a href="#cb48-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-21"><a href="#cb48-21" aria-hidden="true" tabindex="-1"></a><span class="co"># apply function to dataframe column</span></span>
+<span id="cb48-22"><a href="#cb48-22" aria-hidden="true" tabindex="-1"></a>attacks[<span class="st">&quot;text_pre&quot;</span>] <span class="op">=</span> attacks[<span class="st">&quot;text&quot;</span>].<span class="bu">apply</span>(filter_stopwords)</span>
+<span id="cb48-23"><a href="#cb48-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-24"><a href="#cb48-24" aria-hidden="true" tabindex="-1"></a><span class="co"># count items on column</span></span>
+<span id="cb48-25"><a href="#cb48-25" aria-hidden="true" tabindex="-1"></a>token_counts <span class="op">=</span> attacks[<span class="st">&quot;text_pre&quot;</span>].<span class="bu">str</span>.split(expand<span class="op">=</span><span class="va">True</span>).stack().value_counts()[:<span class="dv">20</span>]</span>
+<span id="cb48-26"><a href="#cb48-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-27"><a href="#cb48-27" aria-hidden="true" tabindex="-1"></a>token_counts</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display" data-execution_count="32">
 <pre><code>vos        544
@@ -5737,24 +5741,24 @@ Name: count, dtype: int64</code></pre>
 <div class="cell" data-execution_count="33">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="co"># remove urls, mentions, hashtags and numbers</span></span>
-<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>p.set_options(p.OPT.URL, p.OPT.MENTION, p.OPT.NUMBER)</span>
-<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>attacks[<span class="st">&quot;text_pre&quot;</span>] <span class="op">=</span> attacks[<span class="st">&quot;text_pre&quot;</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> x: p.clean(x))</span>
-<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a><span class="co"># filter column</span></span>
-<span id="cb49-7"><a href="#cb49-7" aria-hidden="true" tabindex="-1"></a>docs <span class="op">=</span> attacks[<span class="st">&quot;text_pre&quot;</span>]</span>
-<span id="cb49-8"><a href="#cb49-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb49-9"><a href="#cb49-9" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate topics and probabilities</span></span>
-<span id="cb49-10"><a href="#cb49-10" aria-hidden="true" tabindex="-1"></a>topic_model <span class="op">=</span> BERTopic(</span>
-<span id="cb49-11"><a href="#cb49-11" aria-hidden="true" tabindex="-1"></a>    language<span class="op">=</span><span class="st">&quot;multilingual&quot;</span>, calculate_probabilities<span class="op">=</span><span class="va">True</span>, verbose<span class="op">=</span><span class="va">True</span></span>
-<span id="cb49-12"><a href="#cb49-12" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb49-13"><a href="#cb49-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb49-14"><a href="#cb49-14" aria-hidden="true" tabindex="-1"></a><span class="co"># training</span></span>
-<span id="cb49-15"><a href="#cb49-15" aria-hidden="true" tabindex="-1"></a>topics, probs <span class="op">=</span> topic_model.fit_transform(docs)</span>
-<span id="cb49-16"><a href="#cb49-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb49-17"><a href="#cb49-17" aria-hidden="true" tabindex="-1"></a><span class="co"># visualize topics</span></span>
-<span id="cb49-18"><a href="#cb49-18" aria-hidden="true" tabindex="-1"></a>topic_model.visualize_topics()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co"># remove urls, mentions, hashtags and numbers</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>p.set_options(p.OPT.URL, p.OPT.MENTION, p.OPT.NUMBER)</span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>attacks[<span class="st">&quot;text_pre&quot;</span>] <span class="op">=</span> attacks[<span class="st">&quot;text_pre&quot;</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> x: p.clean(x))</span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a><span class="co"># filter column</span></span>
+<span id="cb50-7"><a href="#cb50-7" aria-hidden="true" tabindex="-1"></a>docs <span class="op">=</span> attacks[<span class="st">&quot;text_pre&quot;</span>]</span>
+<span id="cb50-8"><a href="#cb50-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-9"><a href="#cb50-9" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate topics and probabilities</span></span>
+<span id="cb50-10"><a href="#cb50-10" aria-hidden="true" tabindex="-1"></a>topic_model <span class="op">=</span> BERTopic(</span>
+<span id="cb50-11"><a href="#cb50-11" aria-hidden="true" tabindex="-1"></a>    language<span class="op">=</span><span class="st">&quot;multilingual&quot;</span>, calculate_probabilities<span class="op">=</span><span class="va">True</span>, verbose<span class="op">=</span><span class="va">True</span></span>
+<span id="cb50-12"><a href="#cb50-12" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb50-13"><a href="#cb50-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-14"><a href="#cb50-14" aria-hidden="true" tabindex="-1"></a><span class="co"># training</span></span>
+<span id="cb50-15"><a href="#cb50-15" aria-hidden="true" tabindex="-1"></a>topics, probs <span class="op">=</span> topic_model.fit_transform(docs)</span>
+<span id="cb50-16"><a href="#cb50-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-17"><a href="#cb50-17" aria-hidden="true" tabindex="-1"></a><span class="co"># visualize topics</span></span>
+<span id="cb50-18"><a href="#cb50-18" aria-hidden="true" tabindex="-1"></a>topic_model.visualize_topics()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 
@@ -5792,11 +5796,11 @@ if (outputEl) {{
 <div class="cell" data-execution_count="34">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co"># reduce the number of topics</span></span>
-<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>topic_model.reduce_topics(docs, nr_topics<span class="op">=</span><span class="dv">20</span>)</span>
-<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a><span class="co"># visualize topics</span></span>
-<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>topic_model.visualize_topics()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="co"># reduce the number of topics</span></span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>topic_model.reduce_topics(docs, nr_topics<span class="op">=</span><span class="dv">20</span>)</span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a><span class="co"># visualize topics</span></span>
+<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a>topic_model.visualize_topics()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 
@@ -5833,7 +5837,7 @@ if (outputEl) {{
 <div class="cell" data-execution_count="35">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>topic_model.visualize_barchart(top_n_topics<span class="op">=</span><span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>topic_model.visualize_barchart(top_n_topics<span class="op">=</span><span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 
@@ -5870,19 +5874,19 @@ if (outputEl) {{
 <div class="cell" data-execution_count="36">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co"># convert column to list</span></span>
-<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>tweets <span class="op">=</span> attacks[<span class="st">&quot;text_pre&quot;</span>].to_list()</span>
-<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>timestamps <span class="op">=</span> attacks[<span class="st">&quot;dt_date&quot;</span>].to_list()</span>
-<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a>topics_over_time <span class="op">=</span> topic_model.topics_over_time(</span>
-<span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a>    docs<span class="op">=</span>tweets,</span>
-<span id="cb52-7"><a href="#cb52-7" aria-hidden="true" tabindex="-1"></a>    timestamps<span class="op">=</span>timestamps,</span>
-<span id="cb52-8"><a href="#cb52-8" aria-hidden="true" tabindex="-1"></a>    global_tuning<span class="op">=</span><span class="va">True</span>,</span>
-<span id="cb52-9"><a href="#cb52-9" aria-hidden="true" tabindex="-1"></a>    evolution_tuning<span class="op">=</span><span class="va">True</span>,</span>
-<span id="cb52-10"><a href="#cb52-10" aria-hidden="true" tabindex="-1"></a>    nr_bins<span class="op">=</span><span class="dv">20</span>,</span>
-<span id="cb52-11"><a href="#cb52-11" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb52-12"><a href="#cb52-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-13"><a href="#cb52-13" aria-hidden="true" tabindex="-1"></a>topic_model.visualize_topics_over_time(topics_over_time, top_n_topics<span class="op">=</span><span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co"># convert column to list</span></span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>tweets <span class="op">=</span> attacks[<span class="st">&quot;text_pre&quot;</span>].to_list()</span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a>timestamps <span class="op">=</span> attacks[<span class="st">&quot;dt_date&quot;</span>].to_list()</span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a>topics_over_time <span class="op">=</span> topic_model.topics_over_time(</span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a>    docs<span class="op">=</span>tweets,</span>
+<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a>    timestamps<span class="op">=</span>timestamps,</span>
+<span id="cb53-8"><a href="#cb53-8" aria-hidden="true" tabindex="-1"></a>    global_tuning<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb53-9"><a href="#cb53-9" aria-hidden="true" tabindex="-1"></a>    evolution_tuning<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb53-10"><a href="#cb53-10" aria-hidden="true" tabindex="-1"></a>    nr_bins<span class="op">=</span><span class="dv">20</span>,</span>
+<span id="cb53-11"><a href="#cb53-11" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb53-12"><a href="#cb53-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-13"><a href="#cb53-13" aria-hidden="true" tabindex="-1"></a>topic_model.visualize_topics_over_time(topics_over_time, top_n_topics<span class="op">=</span><span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 
