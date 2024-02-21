@@ -23,26 +23,26 @@ website:
             url: pages/0.analisis_general.ipynb
           - text: "1. @diegobranca"
             url: pages/1.@diegobranca.ipynb
-          - text: "2. @JonatanViale"
-            url: pages/2.@JonatanViale.ipynb
-          - text: "3. @Angelalerena"
-            url: pages/3.@Angelalerena.ipynb
-          - text: "4. @Cris_noticias"
-            url: pages/4.@Cris_noticias.ipynb
-          - text: "5. @odonnellmaria"
-            url: pages/5.@odonnellmaria.ipynb
-          - text: "6. @edufeiok"
-            url: pages/6.@edufeiok.ipynb
-          - text: "7. @rialjorge"
-            url: pages/7.@rialjorge.ipynb
-          - text: "8. @robdnavarro"
-            url: pages/8.@robdnavarro.ipynb
-          - text: "9. @guadavazquez"
-            url: pages/9.@guadavazquez.ipynb
-          - text: "10. @luisnovaresio"
-            url: pages/10.@luisnovaresio.ipynb
-          - text: "11. @vivicanosaok"
-            url: pages/11.@vivicanosaok.ipynb
+          - text: "2. @Cris_noticias"
+            url: pages/2.@Cris_noticias.ipynb
+          - text: "3. @JonatanViale"
+            url: pages/3.@JonatanViale.ipynb
+          - text: "4. @Angelalerena"
+            url: pages/4.@Angelalerena.ipynb
+          - text: "5. @edufeiok"
+            url: pages/5.@edufeiok.ipynb
+          - text: "6. @rialjorge"
+            url: pages/6.@rialjorge.ipynb
+          - text: "7. @odonnellmaria"
+            url: pages/7.@odonnellmaria.ipynb
+          - text: "8. @guadavazquez"
+            url: pages/8.@guadavazquez.ipynb
+          - text: "9. @robdnavarro"
+            url: pages/9.@robdnavarro.ipynb
+          - text: "10. @vivicanosaok"
+            url: pages/10.@vivicanosaok.ipynb
+          - text: "11. @luisnovaresio"
+            url: pages/11.@luisnovaresio.ipynb
 
   repo-url: https://github.com/DataCritica/elecciones-argentina-2023
   repo-actions: [edit, issue]
